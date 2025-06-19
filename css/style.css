@@ -567,7 +567,7 @@ PC
     }
 
     img {
-        width: 345px;
+        width: 100%;
     }
 }
 
@@ -801,7 +801,7 @@ SP
 --------------------------------------------------- */
 @media screen and (max-width: 767px) {
     .inner {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         padding: 0 15px;
     }
 
@@ -833,14 +833,56 @@ SP
 
 
     /* セクションタイトル */
-    .heading h2 {
+    .heading {
+        margin: 0 auto 30px;
+
+        h2 {
             font-size: 21px;
+            line-height: 1em;
 
             span{
                 display: inline-block;
-                margin: 0 -1px;
+                margin: 2px -1px;
             }
         }
+    }
+
+
+
+    /* -----------------------------------------ファーストビュー */
+    .first-view {
+        background-image: url(/images/fv-back-sp.jpg);
+        background-size: contain;
+        background-position: 70% 50%;
+        height: 632px;
+        margin-bottom: 50px;
+    }
+
+    .first-view-content {
+        top: 90%;
+        left: 15px;
+        transform: translateY(-90%);
+        -webkit-transform: translateY(-90%);
+        -ms-transform: translateY(-90%);
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        > p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        a {
+
+            strong {
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
 
 
 
@@ -949,13 +991,13 @@ SP
 
     /* -----------------------------------------生徒の声 */
     .voice-container {
-        display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: no-wrap;
         gap: 30px 22px;
     }
 
     .voice-content {
-        width: 31%;
+        width: 100%;
 
         img {
             width: 100%;
@@ -979,6 +1021,69 @@ SP
 
         .woman {
             background-color: #FFCCCC;
+        }
+    }
+
+
+
+    /* -----------------------------------------よくある質問 */
+    .q,
+    .a {
+        font-size: 21px;
+        padding: 5px 10px;
+    }
+
+    .q-text {
+        font-size: 16px;
+    }
+
+
+
+    /* -----------------------------------------会社概要 */
+    .company-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .company-content {
+        text-align: left;
+        border-collapse: collapse;
+
+        tr {
+            border-top: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+
+            th {
+                width: 128px;
+                font-weight: 400;
+            }
+
+            th,
+            td {
+                padding: 20px 0;
+            }
+        }
+    }
+
+
+
+    /* -----------------------------------------フッター */
+    .footer-nav {
+
+        ul {
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+
+            li {
+                a {
+                    transition-duration: .5s;
+
+                    &:hover {
+                        color: var(--yellow);
+                    }
+                }
+            }
         }
     }
 
