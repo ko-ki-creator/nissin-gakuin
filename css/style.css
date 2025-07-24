@@ -374,6 +374,11 @@ PC
         position: relative;
         z-index: 20;
     }
+
+    > img {
+        min-height: 233px;
+        object-fit: cover;
+    }
 }
 
 .feature-title {
