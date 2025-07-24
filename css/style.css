@@ -98,6 +98,16 @@ p {
     line-height: 1.5em;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .header-cta:hover {
+        opacity: 0.8;
+    }
+
+    .first-view-content > a:hover {
+        opacity: 0.8;
+    }
+}
+
 
 
 /* ---------------------------------------------------
@@ -149,7 +159,7 @@ PC
 /* PCナビ */
 .nav-container {
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     align-items: center;
 }
 
@@ -189,10 +199,12 @@ PC
     align-items: center;
     background: linear-gradient(#0281CC 0%, #02639C 100%);
     width: fit-content;
+    margin-left: 30px;
     padding: 15px 30px;
     border-radius: 3px;
     position: relative;
     overflow: hidden;
+    transition: all .3s;
 
     p {
         color: var(--yellow);
@@ -246,7 +258,7 @@ PC
 
 /* -----------------------------------------ファーストビュー */
 .first-view {
-    background-image: url(/images/fv-back.jpg);
+    background-image: url(/images/first-view/fv-back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 10%;
@@ -296,6 +308,7 @@ PC
         position: relative;
         font-weight: 600;
         letter-spacing: 0.03em;
+        transition: all .3s;
 
         p {
             color: var(--white);
@@ -939,7 +952,7 @@ SP
 
     /* -----------------------------------------ファーストビュー */
     .first-view {
-        background-image: url(/images/fv-back.jpg);
+        background-image: url(/images/first-view/fv-back-sp.jpg);
         background-size: cover;
         background-position: 70% 50%;
         height: 632px;
