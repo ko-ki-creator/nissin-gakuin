@@ -4,9 +4,737 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日進学院</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <h1>日進学院</h1>
+    <div class="wrap">
+        <!-- ヘッダー -->
+        <header>
+            <div class="header-wrapper">
+                <div class="header-inner">
+                    <a href="#">
+                        <img src="images/header/logo.png" alt="日進学院ロゴ">
+                        <h1>
+                            <span>日</span>
+                            <span>進</span>
+                            <span>学</span>
+                            <span>院</span>
+                        </h1>
+                    </a>
+                    <div class="nav-container">
+                        <nav class="header-nav">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#">ホーム</a></li>
+                                <li class="nav-item"><a href="#course">コース紹介</a></li>
+                                <li class="nav-item"><a href="#flow">無料体験</a></li>
+                                <li class="nav-item"><a href="#">お問い合わせ</a></li>
+                                <li class="nav-item"><a href="#faq">よくある質問</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="header-cta">
+                            <p>無料体験に申し込む</p>
+                            <img class="cta-arrow" src="images/cta/cta-arrow.png" alt="無料体験に申し込む">
+                        </a>
+                        <button class="hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <img class="arrow-back" src="images/header/arrow-back.png" alt="閉じるボタン">
+                            <p class="menu-close">close</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item"><a href="#">ホーム</a></li>
+                            <li class="nav-item"><a href="#course">コース紹介</a></li>
+                            <li class="nav-item"><a href="#flow">無料体験</a></li>
+                            <li class="nav-item"><a href="#">お問い合わせ</a></li>
+                            <li class="nav-item"><a href="#faq">よくある質問</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-sns">
+                        <a href="https://jp.linkedin.com/" target="_blank" rel="noreferrer">
+                            <img src="images/sns-icon/nav-icon-linkedin.png" alt="リンクドイン">
+                        </a>
+                        <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noreferrer">
+                            <img src="images/sns-icon/nav-icon-facebook.png" alt="フェイスブック">
+                        </a>
+                        <a href="https://x.com/" target="_blank" rel="noreferrer">
+                            <img src="images/sns-icon/nav-icon-x.png" alt="エックス">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ファーストビュー -->
+            <section class="first-view">
+                <div class="first-view-wrapper">
+                    <div class="first-view-inner">
+                        <div class="first-view-content">
+                            <h2>
+                                合格への道を、<br>
+                                確かな一歩で切り開く。
+                            </h2>
+                            <p>
+                                中学・高校・大学受験、<br>
+                                それぞれの目標に合わせた個別指導で<br>
+                                あなたをサポートします。
+                            </p>
+                            <a href="#">
+                                <p>無料体験授業を</p>
+                                <strong>今すぐ申し込む</strong>
+                                <img class="cta-arrow" src="images/cta/cta-arrow.png" alt="無料体験授業を今すぐ申し込む">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 日進学院について -->
+            <section class="about" id="about">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2>
+                                <span>日</span>
+                                <span class="yellow">進</span>
+                                <span>学</span>
+                                <span>院</span>
+                                <span>に</span>
+                                <span>つ</span>
+                                <span>い</span>
+                                <span>て</span>
+                            </h2>
+                        </div>
+                        <div class="about-container multiple-item u-fade-type-up">
+                            <div class="about-content">
+                                <img src="images/about/about-img.jpg" alt="日進学院について">
+                                <p>
+                                    日進学院は、東京都渋谷区で30年以上の歴史を誇る学習塾です。私たちは、一人ひとりの学力や目標に合わせた個別カリキュラムを提供し、これまでに数多くの生徒を難関校合格へと導いてきました。全ての生徒にとってベストな学びを提供することを使命とし、信頼できる教育パートナーとして、保護者様や生徒様から高い評価をいただいております。
+                                </p>
+                            </div>
+                            <div class="about-mission">
+                                <div class="mission">
+                                    <p>ミッション</p>
+                                    <h3>MISSION</h3>
+                                </div>
+                                <h4>
+                                    『夢を実現する力を育む』を理念とし、<br class="pc">
+                                    受験を目指す生徒たちに自信と実力を付けることに専念しています。
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 日進学院の強みについて -->
+            <section class="feature" id="feature">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2>
+                                <span>日</span>
+                                <span>進</span>
+                                <span>学</span>
+                                <span>院</span>
+                                <span>の</span>
+                                <span class="yellow">強</span>
+                                <span>み</span>
+                            </h2>
+                        </div>
+                        <div class="feature-container multiple-item u-fade-type-up">
+                            <div class="feature-content">
+                                <div class="feature-title">
+                                    <img src="images/feature/feature-check-circle.png" alt="">
+                                    <h3>少人数制クラス</h3>
+                                </div>
+                                <img src="images/feature/feature1.jpg" alt="少人数制クラス">
+                                <p>
+                                    最大10名までの少人数制クラスを採用し、生徒一人ひとりの理解度に合わせた指導を行っています。これにより、生徒が質問しやすく、講師が個別に指導できる環境を整えています。
+                                </p>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-title">
+                                    <img src="images/feature/feature-check-circle.png" alt="">
+                                    <h3>個別カリキュラム</h3>
+                                </div>
+                                <img src="images/feature/feature2.jpg" alt="個別カリキュラム">
+                                <p>
+                                    生徒ごとの学習進度や志望校に合わせたオーダーメイドのカリキュラムを作成します。各教科の専門講師が、苦手科目を克服し、得意科目をさらに伸ばすサポートを行います。
+                                </p>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-title">
+                                    <img src="images/feature/feature-check-circle.png" alt="">
+                                    <h3>実績豊富な講師陣</h3>
+                                </div>
+                                <img src="images/feature/feature3.jpg" alt="実績豊富な講師陣">
+                                <p>
+                                    日進学院では、10年以上の指導経験を持つ講師が多数在籍しています。彼らは受験の最新動向を把握し、過去のデータを元にした的確な指導で、合格率の向上を実現しています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- コース紹介 -->
+            <section class="course" id="course">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2>
+                                <span>コ</span>
+                                <span>ー</span>
+                                <span>ス</span>
+                                <span class="yellow">紹</span>
+                                <span>介</span>
+                            </h2>
+                        </div>
+                        <div class="course-container multiple-item u-fade-type-up">
+                            <div class="course-content junior">
+                                <div class="course-group">
+                                    <h3>中学受験コース</h3>
+                                    <p>
+                                        日進学院の中学受験コースでは、基礎学力の徹底と応用力の強化を図ります。特に、算数の文章題や理科の実験問題など、難関校特有の問題にも対応できる力を養います。また、面接や作文対策も含め、総合的な受験準備を行います。
+                                    </p>
+                                </div>
+                                <div class="course-img">
+                                    <img src="images/course/course-junior1.jpg" alt="中学受験コース">
+                                    <img src="images/course/course-junior2.jpg" alt="中学受験コース">
+                                    <img src="images/course/course-highschool3.jpg" alt="中学受験コース">
+                                </div>
+                            </div>
+                            <div class="course-content highschool">
+                                <div class="course-group">
+                                    <h3>高校受験コース</h3>
+                                    <p>
+                                        高校受験コースでは、内申点対策から模試の活用まで、志望校合格を目指すための総合的な学習を提供します。志望校別の過去問分析を行い、効果的な学習プランを提案します。また、定期テスト対策講座も充実しており、全教科での成績向上をサポートします。
+                                    </p>
+                                </div>
+                                <div class="course-img">
+                                    <img src="images/course/course-highschool1.jpg" alt="高校受験コース">
+                                    <img src="images/course/course-highschool2.jpg" alt="高校受験コース">
+                                    <img src="images/course/course-highschool3.jpg" alt="高校受験コース">
+                                </div>
+                            </div>
+                            <div class="course-content university">
+                                <div class="course-group">
+                                    <h3>大学受験コース</h3>
+                                    <p>
+                                        大学受験コースでは、センター試験対策から二次試験まで、志望大学に合格するための徹底的な指導を行います。特に、国公立大学や難関私立大学を目指す生徒向けには、個別指導を強化し、各教科のエキスパートがマンツーマンで対応します。受験直前の集中講座も提供し、万全の態勢で受験に臨めるようサポートします。
+                                    </p>
+                                </div>
+                                <div class="course-img">
+                                    <img src="images/course/course-university1.jpg" alt="大学受験コース">
+                                    <img src="images/course/course-university2.jpg" alt="大学受験コース">
+                                    <img src="images/course/course-university3.jpg" alt="大学受験コース">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 申し込みの流れ -->
+            <section class="flow" id="flow">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2>
+                                <span>申</span>
+                                <span>し</span>
+                                <span>込</span>
+                                <span>み</span>
+                                <span>の</span>
+                                <span class="yellow">流</span>
+                                <span>れ</span>
+                            </h2>
+                        </div>
+                        <div class="flow-container multiple-item u-fade-type-up">
+                            <div class="flow-content">
+                                <div class="flow-group">
+                                    <div class="flow-title">
+                                        <p>STEP 1</p>
+                                        <h3>お問い合わせ</h3>
+                                    </div>
+                                    <p>
+                                        まずは、お電話またはウェブサイトのフォームからお問い合わせください。ご希望のコースや学年について簡単にお伝えいただければ、最適なプランをご提案いたします。
+                                    </p>
+                                </div>
+                                <img src="images/flow/flow1.jpg" alt="お問い合わせ">
+                            </div>
+                            <img src="images/flow/flow-arrow.png" alt="">
+                            <div class="flow-content">
+                                <div class="flow-group">
+                                    <div class="flow-title">
+                                        <p>STEP 2</p>
+                                        <h3>無料カウンセリング</h3>
+                                    </div>
+                                    <p>
+                                        専任のカウンセラーが現在の学習状況や志望校について詳しくお伺いし、生徒一人ひとりに最適な学習プランを提案いたします。保護者様同伴でのご相談も可能です。
+                                    </p>
+                                </div>
+                                <img src="images/flow/flow2.jpg" alt="無料カウンセリング">
+                            </div>
+                            <img src="images/flow/flow-arrow.png" alt="">
+                            <div class="flow-content">
+                                <div class="flow-group">
+                                    <div class="flow-title">
+                                        <p>STEP 3</p>
+                                        <h3>体験授業</h3>
+                                    </div>
+                                    <p>
+                                        無料体験授業では、実際の授業を体験し、日進学院の指導方針や学習環境を確認していただけます。体験授業後には、授業のフィードバックもお伝えし、今後の学習方針をご相談いただけます。
+                                    </p>
+                                </div>
+                                <img src="images/flow/flow3.jpg" alt="体験授業">
+                            </div>
+                            <img src="images/flow/flow-arrow.png" alt="">
+                            <div class="flow-content">
+                                <div class="flow-group">
+                                    <div class="flow-title">
+                                        <p>STEP 4</p>
+                                        <h3>入会手続き</h3>
+                                    </div>
+                                    <p>
+                                        体験授業で納得いただけましたら、正式な入会手続きを行います。授業開始前には、初回カウンセリングで今後の目標設定と学習計画を確認し、入会後すぐに学習をスタートできるようにいたします。
+                                    </p>
+                                </div>
+                                <img src="images/flow/flow4.jpg" alt="入会手続き">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 講師紹介 -->
+            <section class="instructor" id="instructor">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2 class="space-bottom">
+                                <span>講</span>
+                                <span class="yellow">師</span>
+                                <span>紹</span>
+                                <span>介</span>
+                            </h2>
+                            <p>日進学院の講師陣は、豊富な経験と実績を持ち、あなたの夢を現実にするために全力でサポートします。</p>
+                        </div>
+                        <div class="instructor-container multiple-item u-fade-type-up">
+                            <div class="instructor-content">
+                                <div class="instructor-img-name">
+                                    <p>山田 太郎</p>
+                                    <img src="images/instructor/instructor1.jpg" alt="山田太郎">
+                                </div>
+                                <div class="instructor-profile">
+                                    <p>
+                                        過去10年間で、難関中学・高校に100名以上の合格者を輩出。生徒がつまずきやすいポイントを徹底的に指導します。
+                                    </p>
+                                    <div class="charge-school">
+                                        <p>数学担当</p>
+                                        <p>東京大学卒業</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="instructor-img-name">
+                                    <p>佐藤 花子</p>
+                                    <img src="images/instructor/instructor2.jpg" alt="佐藤花子">
+                                </div>
+                                <div class="instructor-profile">
+                                    <p>
+                                        特にリスニングやスピーキングの指導に定評があり、生徒の英語力を飛躍的に向上させます。
+                                    </p>
+                                    <div class="charge-school">
+                                        <p>英語担当</p>
+                                        <p>早稲田大学卒業</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="instructor-img-name">
+                                    <p>鈴木 一郎</p>
+                                    <img src="images/instructor/instructor3.jpg" alt="鈴木一郎">
+                                </div>
+                                <div class="instructor-profile">
+                                    <p>
+                                        理科全般にわたり、分かりやすい説明と実験を交えた授業で、生徒の理解を深めます。
+                                    </p>
+                                    <div class="charge-school">
+                                        <p>理科担当</p>
+                                        <p>京都大学卒業</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="instructor-img-name">
+                                    <p>田中 優子</p>
+                                    <img src="images/instructor/instructor4.jpg" alt="田中優子">
+                                </div>
+                                <div class="instructor-profile">
+                                    <p>
+                                        古典・漢文の指導において高い評価を受けており、難解な文章も生徒が理解できるように導きます。
+                                    </p>
+                                    <div class="charge-school">
+                                        <p>国語担当</p>
+                                        <p>慶應義塾大学卒業</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="instructor-img-name">
+                                    <p>高橋 健</p>
+                                    <img src="images/instructor/instructor5.jpg" alt="高橋健">
+                                </div>
+                                <div class="instructor-profile">
+                                    <p>
+                                        日本史や世界史の背景を分かりやすく解説し、生徒が興味を持って学べるよう指導します。
+                                    </p>
+                                    <div class="charge-school">
+                                        <p>社会担当</p>
+                                        <p>東京大学卒業</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="instructor-img-name">
+                                    <p>中村 美咲</p>
+                                    <img src="images/instructor/instructor6.jpg" alt="中村美咲">
+                                </div>
+                                <div class="instructor-profile">
+                                    <p>
+                                        長文読解や作文対策に強みがあり、志望校合格に向けた的確な指導を行います。
+                                    </p>
+                                    <div class="charge-school">
+                                        <p>英語・現代文担当</p>
+                                        <p>東京外国語大学卒業</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 生徒の声 -->
+            <section class="voice" id="voice">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2 class="space-bottom">
+                                <span>日</span>
+                                <span>進</span>
+                                <span>学</span>
+                                <span>院</span>
+                                <span>で</span>
+                                <span>夢</span>
+                                <span>を</span><br class="sp">
+                                <span class="yellow">叶</span>
+                                <span>え</span>
+                                <span>た</span><br class="pc">
+                                <span>生</span>
+                                <span>徒</span>
+                                <span>た</span>
+                                <span>ち</span>
+                                <span>の</span><br class="sp">
+                                <span>リ</span>
+                                <span>ア</span>
+                                <span>ル</span>
+                                <span>な</span>
+                                <span class="yellow">声</span>
+                            </h2>
+                        </div>
+                        <div class="voice-container multiple-item u-fade-type-up">
+                            <div class="voice-content">
+                                <img src="images/voice/voice1.jpg" alt="田中学">
+                                <div class="voice-comment">
+                                    <h3 class="men">田中 学</h3>
+                                    <p>
+                                        日進学院に通い始めて、苦手だった数学が得意科目になりました。先生方の指導がとてもわかりやすく、自分のペースで学べたのが良かったです。おかげで第一志望の学校に合格できました！
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice/voice2.jpg" alt="鈴木由美">
+                                <div class="voice-comment">
+                                    <h3 class="woman">鈴木 由美</h3>
+                                    <p>
+                                        英語のリスニングが苦手でしたが、日進学院の授業で自信がつきました。毎回の授業が楽しみで、どんどん英語が好きになりました。無事に高校受験を乗り越え、今は楽しい学校生活を送っています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice/voice3.jpg" alt="佐藤健太">
+                                <div class="voice-comment">
+                                    <h3 class="men">佐藤 健太</h3>
+                                    <p>
+                                        大学受験の直前まで勉強方法に悩んでいましたが、日進学院の先生方が具体的な勉強計画を立ててくれたおかげで、効率的に学習を進めることができました。志望大学に合格できたのは、日進学院のサポートがあったからです。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice/voice4.jpg" alt="中村美和">
+                                <div class="voice-comment">
+                                    <h3 class="woman">中村 美和</h3>
+                                    <p>
+                                        社会の授業が苦手だった私にとって、日進学院の授業は救いでした。歴史の背景やエピソードを交えた先生の説明がとても面白く、興味を持って学ぶことができました。定期テストでも好成績を収めることができ、本当に感謝しています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice/voice5.jpg" alt="高橋英樹">
+                                <div class="voice-comment">
+                                    <h3 class="men">高橋 英樹</h3>
+                                    <p>
+                                        日進学院の授業では、数学や理科だけでなく、全体的な学習のバランスを取る方法を学べました。苦手科目を克服しつつ、得意科目もさらに伸ばせたことが自信につながりました。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice/voice6.jpg" alt="佐々木美佳">
+                                <div class="voice-comment">
+                                    <h3 class="woman">佐々木 美佳</h3>
+                                    <p>
+                                        日進学院での学びが、私の受験勉強に大きな影響を与えました。先生方の熱心な指導のおかげで、最後まで諦めずに頑張ることができました。合格の知らせを聞いたときは、本当に嬉しかったです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- よくある質問 -->
+            <section class="faq" id="faq">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading multiple-item u-fade-type-up">
+                            <h2>
+                                <span>よ</span>
+                                <span>く</span>
+                                <span>あ</span>
+                                <span>る</span>
+                                <span>質</span>
+                                <span class="yellow">問</span>
+                            </h2>
+                        </div>
+                        <div class="faq-container multiple-item u-fade-type-up">
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">日進学院の授業はどのように進行しますか？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        少人数制クラスで、各教科の専門講師が生徒一人ひとりの理解度に合わせて授業を進めます。生徒がつまずいた際には、その場で質問できる環境が整っています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">無料体験授業の内容は？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        実際に行っている通常授業を無料で体験いただけます。授業後には、講師からのフィードバックを受けることができますので、日進学院の指導スタイルをしっかりと確認できます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">申し込み後の手続きは？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        申し込み後にカウンセリングを行い、生徒の学力や目標に合わせたプランを提案します。その後、無料体験授業を受講いただき、納得の上で入会手続きを進めます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">学費の支払い方法は？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        学費は月払い・一括払いのどちらでも対応可能です。お支払い方法は、銀行振込、クレジットカード、または現金でお選びいただけます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">授業についていけるか不安です。</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        日進学院では、各生徒のペースに合わせた指導を行っているため、授業についていけるようサポートいたします。必要に応じて、補習や個別指導も提供しています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">学習塾の場所はどこですか？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        日進学院は東京都渋谷区〇〇に位置し、最寄り駅から徒歩5分のアクセス便利な場所にあります。地図やアクセス方法は、ウェブサイトの「お問い合わせ」ページでご確認いただけます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">授業の振替は可能ですか？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        授業の振替は可能です。事前にご連絡いただければ、別の日程での授業をご案内いたします。また、急な体調不良などにも柔軟に対応いたします。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">どの学年から受講できますか？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        日進学院では、小学4年生から大学受験生まで、幅広い学年の生徒を対象にしたコースを提供しています。詳しいコース内容は「コース紹介」ページをご覧ください。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">特別講習はありますか？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        夏期講習や冬期講習など、季節ごとの特別講習を実施しています。特別講習では、通常授業ではカバーしきれない範囲や、集中して学びたい内容に特化したカリキュラムを提供しています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-content">
+                                <div class="question">
+                                    <p class="q">Q</p>
+                                    <p class="q-text">保護者向けの説明会はありますか？</p>
+                                </div>
+                                <div class="answer">
+                                    <p class="a">A</p>
+                                    <p class="a-text">
+                                        定期的に保護者説明会を開催しており、お子様の学習状況や受験対策について直接講師から説明を受けることができます。詳しい日程や内容は、ウェブサイトの「お知らせ」ページでご確認ください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 会社概要 -->
+            <section class="company">
+                <div class="wrapper">
+                    <div class="inner multiple-list js-scroll-trigger">
+                        <div class="heading">
+                            <h2>
+                                <span>会</span>
+                                <span class="yellow">社</span>
+                                <span>概</span>
+                                <span>要</span>
+                            </h2>
+                        </div>
+                        <div class="company-container">
+                            <table class="company-content">
+                                <tr>
+                                    <th>所在地</th>
+                                    <td>東京都渋谷区〇〇町1-2-3</td>
+                                </tr>
+                                <tr>
+                                    <th>電話番号</th>
+                                    <td>03-1234-5678</td>
+                                </tr>
+                                <tr>
+                                    <th>メールアドレス</th>
+                                    <td>info@nissin-academy.jp</td>
+                                </tr>
+                                <tr>
+                                    <th>営業時間</th>
+                                    <td>
+                                        平日 14:00 - 21:00 /<br class="sp">
+                                        土曜 10:00 - 18:00 /<br class="sp">
+                                        日曜・祝日 休業
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>アクセス</th>
+                                    <td>
+                                        最寄り駅から徒歩5分<br class="sp">
+                                        （〇〇駅出口1）
+                                    </td>
+                                </tr>
+                            </table>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25931.283303112887!2d139.67201654296963!3d35.66689516148542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2z5p2x5Lqs6YO95riL6LC35Yy6!5e0!3m2!1sja!2sjp!4v1753373135160!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-wrapper">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li class="footer-nav-item"><a href="#">ホーム</a></li>
+                            <li class="footer-nav-item"><a href="#course">コース紹介</a></li>
+                            <li class="footer-nav-item"><a href="#flow">無料体験</a></li>
+                            <li class="footer-nav-item"><a href="#contact">お問い合わせ</a></li>
+                            <li class="footer-nav-item"><a href="#faq">よくある質問</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-sns">
+                        <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noreferrer">
+                            <img src="images/sns-icon/icon-facebook.png" alt="フェイスブック">
+                        </a>
+                        <a href="https://x.com/" target="_blank" rel="noreferrer">
+                            <img src="images/sns-icon/icon-x.png" alt="エックス">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                            <img src="images/sns-icon/icon-instagram.png" alt="インスタグラム">
+                        </a>
+                    </div>
+                    <p class="copyright">© 2024 日進学院. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="./js/main.js"></script>
 </body>
 </html>
